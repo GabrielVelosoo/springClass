@@ -1,6 +1,9 @@
 package com.example.demo.entities;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.annotation.JsonIgnore;
+=======
+>>>>>>> f38c33cea310b0ce3ddf385cdef8dfb6a2248770
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -16,7 +19,10 @@ public class Payment implements Serializable {
     private Long id;
     private Instant moment;
 
+<<<<<<< HEAD
     @JsonIgnore
+=======
+>>>>>>> f38c33cea310b0ce3ddf385cdef8dfb6a2248770
     @OneToOne
     @MapsId
     private Order order;
