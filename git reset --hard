@@ -1,0 +1,14 @@
+[33mf38c33c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to origin/main
+[33mf38c33c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: reset: moving to origin/main
+[33m0f27a8b[m HEAD@{2}: reset: moving to origin/main
+[33m0f27a8b[m HEAD@{3}: commit: ManyToMany products and orders
+[33md17ebe1[m HEAD@{4}: reset: moving to origin/main
+[33md17ebe1[m HEAD@{5}: commit: OrderItem add
+[33m68834b8[m HEAD@{6}: commit: Add relationship product and category
+[33m0eedcf2[m HEAD@{7}: pull: Fast-forward
+[33me94642f[m HEAD@{8}: commit: Category entity
+[33me3031d6[m HEAD@{9}: commit: Enum OrderStatus
+[33mdb04cbf[m HEAD@{10}: commit: Relacionamento order user
+[33m27a2bec[m HEAD@{11}: commit: Created entity order
+[33m867cbc7[m HEAD@{12}: commit: Work config
+[33ma552444[m HEAD@{13}: clone: from https://github.com/GabrielVelosoo/springClass

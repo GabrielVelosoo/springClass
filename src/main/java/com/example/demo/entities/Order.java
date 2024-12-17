@@ -2,6 +2,7 @@ package com.example.demo.entities;
 
 import com.example.demo.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -29,6 +30,9 @@ public class Order implements Serializable {
 
     @OneToMany(mappedBy = "id.order")
     private Set<OrderItem> items = new HashSet<>();
+
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
+    private Payment payment;
 
     public Order() {
     }
@@ -66,6 +70,14 @@ public class Order implements Serializable {
         return items;
     }
 
+    public Payment getPayment() {
+        return payment;
+    }
+
+    public void setPayment(Payment payment) {
+        this.payment = payment;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -77,5 +89,13 @@ public class Order implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hashCode(id);
+    }
+
+    public Double getTotal() {
+        Double total = 0.0;
+        for(OrderItem item : items) {
+            total += item.getSubTotal();
+        }
+        return total;
     }
 }
